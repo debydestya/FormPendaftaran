@@ -55,28 +55,38 @@
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <RadioGroup
+                android:id="@+id/radioGroupTipe"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/radioButtonP"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Privat" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/radioButtonK"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="Kelompok" />
             </RadioGroup>
 
-            <EditText
-                android:id="@+id/editText2"
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextJumlah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Jumlah Siswa"
+                    android:inputType="numberSigned"
+                    android:visibility="gone" />
+
+            </android.support.design.widget.TextInputLayout>
 
             <TextView
                 android:id="@+id/textView2"
@@ -138,10 +148,13 @@
 
             <Button
                 android:id="@+id/buttonOK"
+                style="@style/Base.TextAppearance.AppCompat.Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="OK" />
+                android:background="@drawable/bgbtn"
+                android:text="OK"
+                android:textColor="@android:color/white" />
 
             <TextView
                 android:id="@+id/textViewNama"
@@ -150,10 +163,10 @@
                 tools:text="nama" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/textViewTipe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text" />
+                tools:text="tipe" />
 
             <TextView
                 android:id="@+id/textView7"
