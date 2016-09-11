@@ -107,7 +107,7 @@
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textViewPel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mata Pelajaran"
@@ -120,7 +120,7 @@
                 android:weightSum="1">
 
                 <CheckBox
-                    android:id="@+id/checkBox"
+                    android:id="@+id/checkBoxMat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.18"
@@ -128,7 +128,7 @@
                     android:text="Matematika" />
 
                 <CheckBox
-                    android:id="@+id/checkBox2"
+                    android:id="@+id/checkBoxIpa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.69"
@@ -136,7 +136,7 @@
                     android:text="IPA" />
 
                 <CheckBox
-                    android:id="@+id/checkBox3"
+                    android:id="@+id/checkBoxBahasa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
@@ -175,10 +175,10 @@
                 tools:text="kelas" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/textViewMapel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text" />
+                tools:text="mapel" />
 
         </LinearLayout>
 
